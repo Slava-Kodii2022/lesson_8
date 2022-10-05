@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap');
+
+/* ============================== */
+.body {
+	font-family: "Lato";
+	color: #424551;
+}
+
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0 auto;
+}
+
+/* =============================== */
+.page__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 40px;
+}
+
+.page__main-text {
+	font-weight: 400;
+	margin-bottom: 45px;
+	line-height: 160%;
+}
+
+.page__text p {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom: 25px;
+}
+
+.page__text ul {
+	margin-bottom: 50px;
+}
+
+.page__text li {
+	min-height: 20px; 
+	margin-bottom: 4px;
+	padding-left: 32px;
+	background: url(../img/icons/check.svg) 0 3px no-repeat;
+}
+
+.page__title6 {
+	font-weight: 700;
+	line-height: 150%;
+	margin-bottom: 10px;
+}
+/* ===============Псевдокласи================== */
+
+.page__text-before, pseudoclasses {
+	background-color: rgb(184, 236, 236);
+	margin-bottom: 20px;
+}
+
+.page__text-before p {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom: 25px;
+}
+
+.page__text-before ul li::before{
+	background: url('../img/icons/check.svg') 0 0 no-repeat;
+	content: "";
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 10px;
+	transition: all 0.1s ease 0s;
+}
+
+.page__text-before ul li:hover::before{
+	transform: scale(1.5);
+}
+
+.pseudoclasses {
+	font-weight: 700;
+	font-size: 28px;
+}
+
+[class*="__blok"]{
+	margin-bottom: 20px;
+	background-color: sandybrown;
+	text-align: center;
+	font-size: 25px;
+	line-height: 150%;
+	text-transform: capitalize;
+}
+
+.hover__blok:hover{
+	background-color: gold;
+}
+
+.hover:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+.active:active {
+	color: green;
+	text-decoration: underline;
+}
+
+.visited:visited {
+	color: grey;
+}
+.focus:focus {
+	outline: 3px double rgb(255, 0, 0);
+}
+
+.target:target {
+	text-decoration: underline;
+}
